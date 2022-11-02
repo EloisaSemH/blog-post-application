@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PostController@show')->name('/');
+
+Route::post('/comment', 'CommentController@save')->name('comment.save');

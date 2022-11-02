@@ -13,6 +13,7 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('/', 'PostController@api');
+Route::post('comment/new', 'CommentController@saveApi');
+Route::put('comment/{commentUuid}', 'CommentController@editApi');
+Route::delete('comment/{commentUuid}', 'CommentController@deleteApi');
