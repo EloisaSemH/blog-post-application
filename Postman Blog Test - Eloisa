@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "1fa02022-af2f-475f-83d3-d0af1c8efb6f",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get content",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Save comment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"uuid\": \"3790c6a5-1ee8-3a06-92e5-6277406b265b\",\r\n    \"username\": \"Teste api\",\r\n    \"comment\": \"text level 4\",\r\n    \"level\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}comment/new",
+					"host": [
+						"{{url}}comment"
+					],
+					"path": [
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit comment",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Teste api\",\r\n    \"comment\": \"text\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}comment/c41e8ff7-4771-4951-a374-77b89ca9fb4c",
+					"host": [
+						"{{url}}comment"
+					],
+					"path": [
+						"c41e8ff7-4771-4951-a374-77b89ca9fb4c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete comment",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Teste api\",\r\n    \"comment\": \"text\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}comment/c41e8ff7-4771-4951-a374-77b89ca9fb4c",
+					"host": [
+						"{{url}}comment"
+					],
+					"path": [
+						"c41e8ff7-4771-4951-a374-77b89ca9fb4c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
