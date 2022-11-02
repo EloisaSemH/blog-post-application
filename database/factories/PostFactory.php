@@ -6,8 +6,8 @@ use Faker\Generator as Faker;
 $factory->define(Post::class, function (Faker $faker) {
     return [
         'uuid' => $faker->uuid,
-        'title' => $faker->title,
+        'title' => $faker->sentence,
         'subtitle' => $faker->sentence,
-        'text' => $faker->text,
+        'text' => $faker->text . '<br>' . $faker->text,
     ];
 });
