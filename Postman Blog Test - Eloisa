@@ -1,15 +1,17 @@
 {
 	"info": {
-		"_postman_id": "1fa02022-af2f-475f-83d3-d0af1c8efb6f",
-		"name": "New Collection",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"_postman_id": "5df43ddf-67ab-41dc-a816-acef61c01ab3",
+		"name": "Blog Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "12598829"
 	},
 	"item": [
 		{
 			"name": "Get content",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": "{{url}}"
 			},
 			"response": []
 		},
@@ -20,22 +22,14 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"uuid\": \"3790c6a5-1ee8-3a06-92e5-6277406b265b\",\r\n    \"username\": \"Teste api\",\r\n    \"comment\": \"text level 4\",\r\n    \"level\": 4\r\n}",
+					"raw": "{\r\n    \"uuid\": \"acea5381-5340-4477-ab7e-76dc4c44adcf\",\r\n    \"username\": \"Teste api\",\r\n    \"comment\": \"text level 2\",\r\n    \"level\": 2\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": {
-					"raw": "{{url}}comment/new",
-					"host": [
-						"{{url}}comment"
-					],
-					"path": [
-						"new"
-					]
-				}
+				"url": "{{url}}/comment/new"
 			},
 			"response": []
 		},
@@ -46,48 +40,23 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"username\": \"Teste api\",\r\n    \"comment\": \"text\",\r\n}",
+					"raw": "{\r\n    \"username\": \"Teste api\",\r\n    \"comment\": \"text\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": {
-					"raw": "{{url}}comment/c41e8ff7-4771-4951-a374-77b89ca9fb4c",
-					"host": [
-						"{{url}}comment"
-					],
-					"path": [
-						"c41e8ff7-4771-4951-a374-77b89ca9fb4c"
-					]
-				}
+				"url": "{{url}}/comment/acea5381-5340-4477-ab7e-76dc4c44adcf"
 			},
 			"response": []
 		},
 		{
 			"name": "Delete comment",
 			"request": {
-				"method": "PUT",
+				"method": "DELETE",
 				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"username\": \"Teste api\",\r\n    \"comment\": \"text\",\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{url}}comment/c41e8ff7-4771-4951-a374-77b89ca9fb4c",
-					"host": [
-						"{{url}}comment"
-					],
-					"path": [
-						"c41e8ff7-4771-4951-a374-77b89ca9fb4c"
-					]
-				}
+				"url": "{{url}}/comment/c34ce4b2-bfb0-40b1-97e7-b0a595d85946"
 			},
 			"response": []
 		}
