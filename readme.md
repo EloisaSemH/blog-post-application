@@ -4,6 +4,7 @@ This project was made as a code challenge for a oportunity as a Laravel develope
 
 # Context
 Create a simple Blog Post application that allows commenting. Comments can also be commented but up to the 3rd layer only.
+
 ## Requirements:
 - Create the comment system REST API with Laravel 5.5+ with MySQL as the database.
 - Try NOT use Laravel’s Eloquent ORM, you are only allowed to use the query builder or raw SQL.
@@ -57,7 +58,7 @@ Create a simple Blog Post application that allows commenting. Comments can also 
 ]
 ```
 
-What we are looking for:
+### What we are looking for:
 - Clean Code following PSR Standards
 - Organized business logic
 - Optimized SQL
@@ -65,7 +66,7 @@ What we are looking for:
 - Object-oriented design
 - Software design patterns
 
-Important notes:
+### Important notes:
 - Start an empty repository in GitHub, commit the base Laravel to the master branch and then start work. (so when we read your code, we can separate it from Laravel base code).
 - Don’t make the project complicated; there is no need for user login, live broadcasting, and notifications.
 - You don’t need to create a User and Post model.
